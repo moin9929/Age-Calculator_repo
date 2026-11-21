@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(180deg, rgba(3, 200, 239, 0.333), #5c71b6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.calculator {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.calculator h1 {
+    font-size: 50px;
+    color: rgb(133, 33, 233);
+    margin-bottom: 10px;
+}
+
+.calculator h1 span {
+    font-size: 30px;
+    color: rgb(88, 81, 87);
+}
+
+.input-box {
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 30px;
+    background: rgba(210, 223, 149, 0.9);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.input-box input {
+    flex: 1;
+    padding: 14px 20px;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    border-radius: 5px;
+    background: #fff;
+    cursor: pointer;
+}
+
+/* Restores and styles the calendar icon properly */
+.input-box input::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    filter: invert(0.3); /* Adjusts icon contrast if needed */
+    width: 20px;
+    height: 20px;
+}
+
+.input-box button {
+    background: rgb(23, 175, 192);
+    border: 0;
+    outline: 0;
+    color: antiquewhite;
+    font-weight: bold;
+    padding: 14px 24px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.2s;
+}
+
+.input-box button:hover {
+    background: rgb(18, 145, 158);
+}
+
+#result {
+    font-size: 24px;
+    color: #f4f1f1;
+    margin-top: 25px;
+    font-weight: 500;
+    text-align: center;
+}
+
+#result span {
+    color: #ffeb3b;
+    font-weight: bold;
+}
